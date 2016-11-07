@@ -1,6 +1,7 @@
 <% if signed_in? %>
   <div class="row">
     <aside class="span4">
+    <div class="jumbotron">
       <section>
         <%= render 'shared/user_info' %>
       </section>
@@ -10,9 +11,11 @@
       <section>
         <%= render 'shared/micropost_form' %>
       </section>
+          </div>
     </aside>
     <div class="span8">
-      <h3>Micropost Feed</h3>
+
+      <h3>Flowblocks Feed</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
@@ -22,7 +25,7 @@
 
     <h2>
       Find your flow
-      <a href="http://railstutorial.org/">Find your flow</a>
+      <a href="http://railstutorial.org/"></a>
     </h2>
 
     <%= link_to "Sign up now!", signup_path,

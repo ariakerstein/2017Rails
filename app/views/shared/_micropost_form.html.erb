@@ -1,7 +1,88 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+    <%= f.text_area :content, placeholder: "Flow block title..." %>
   </div>
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
 <% end %>
+
+
+<!-- INTEGRATE THE FLOW BLOCK TIMER HERE   -->
+<h1>New flow block<br></br></h1>
+
+
+<h1 class="modal-title" id='msg' align='center' class='text-center'></h1>
+
+
+<div id = "myAlert" class = "page-header">
+   <a href = "#" class = "close" data-dismiss = "alert">&times;</a>
+   <strong>Nice work - you're done!</strong>
+</div>
+     </div>
+
+  </div>
+</div>
+</div>
+
+
+<div class="container content">
+<div class="jumbotron">
+<div class="panel panel-default">
+  <div class="panel-body col-xs-8">
+      <label for='work'>Flow timer (min): </label>
+      <input autofocus id='work' type='text' min=0 max=200 value='25' >
+
+      <div class="btn-group" role="group" >
+        <button id='start' class='btn btn-primary center-block'>Start
+        <span class="glyphicon glyphicon-record">
+        </button>
+      <button id='pause' class='btn btn-primary center-block pause'>Pause
+<!-- <span class="glyphicon glyphicon-pause"> -->
+      </button>
+      <button id='reset' class='btn btn-primary center-block'>Reset</button>
+    </div><!--Row Closer-->
+  </div>
+
+</div>
+
+   <form action="#" class="form-horizontal" method="post">
+        <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+       
+
+
+    </div>
+
+<form action="#" method = 'post'>
+
+<!--       <div class="form-group"> -->
+      <input class="form-control" type ='text' size='30' name='name' placeholder="Title">   
+      <br>
+
+
+<div class="panel panel-default">
+  <div class="panel-body col-xs-8 pull-right">
+
+<input type='submit' class='btn btn-primary pull-right' id="saveEntry" value='Create'>
+
+<!-- </div> -->
+<!-- </div> -->
+
+</form>
+
+      </div>
+    </div>
+
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+  </div>
+    </div>
+
+
+<!-- END INTEGRATE THE FLOW BLOCK TIMER HERE   -->
