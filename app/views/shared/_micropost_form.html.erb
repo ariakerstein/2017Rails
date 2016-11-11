@@ -1,10 +1,10 @@
 
-<h1>New flow block<br></br></h1>
+<!-- <h1>New flow block<br></br></h1> -->
 
 <!-- <div class="container content"> -->
 <!--       <div class="panel-body"> -->
         <!-- <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
-<h1 class="modal-title" id='msg' align='center' class='text-center'></h1>
+<h1 class="modal-title" id='msg' align='center' style="text-align: center"></h1>
 <!--         <h1> <span class="label label-default" id='msg' </span></h1>
         <h1 class="modal-title" id='time' class='text-center'></h1>
         <h1 class="modal-title" id='alert' class='text-center'></h1> -->
@@ -12,7 +12,7 @@
  
 <!-- <div class="modal-body"> -->
 
-<div id = "myAlert" class = "page-header">
+<div id = "myAlert" class = "page-header" align="center">
    <a href = "#" class = "close" data-dismiss = "alert">&times;</a>
    <strong>Nice work - you're done!</strong>
 </div>
@@ -54,6 +54,7 @@
 
   <div class="field">
     <%= f.text_area :content, placeholder: "Flow block title..." %>
+<!-- -->
 
 
   <%= f.submit "Post", class: "btn btn-large btn-primary pull-right", id: "saveEntry" %>
