@@ -13,19 +13,14 @@
    <strong>Nice work - you're done!</strong>
 </div>
 
-
-
 <!--   <div class='container-fluid'>
     <div class='col-xs-12'> -->
 
 
 <div class="row">
-<div class="col-xs-8">
-<div class="hero-unit">
+<!-- <div class="col-xs-8"> -->
+<!-- <div class="hero-unit"> -->
 
-
-      <label for='work'>Flow timer (min): </label>
-      <input autofocus id='work' type='text' min=0 max=200 value='25' >
 
       <div class="btn-group" role="group" >
         <button id='start' class='btn btn-primary center-block'>Start
@@ -37,10 +32,8 @@
       <button id='reset' class='btn btn-primary center-block'>Reset</button>
     </div><!--Row Closer-->
 
-
-
-
-
+      <label for='work'>Flow timer (min): </label>
+      <input autofocus id='work' type='text' min=0 max=200 value='25' >
        <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
 
@@ -51,7 +44,6 @@
 
 
   <%= f.submit "Post", class: "btn btn-large btn-primary", id: "saveEntry" %>
-
 
     </div>
 
