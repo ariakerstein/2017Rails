@@ -1,36 +1,29 @@
+<%= form_for(@micropost) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+<!--  -->
+<% end %>
 
-<h1>New flow block<br></br></h1>
 
-<!-- <div class="container content"> -->
-<!--       <div class="panel-body"> -->
-        <!-- <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
-<h1 class="modal-title" id='msg' align='center' class='text-center'></h1>
-<!--         <h1> <span class="label label-default" id='msg' </span></h1>
-        <h1 class="modal-title" id='time' class='text-center'></h1>
-        <h1 class="modal-title" id='alert' class='text-center'></h1> -->
-<!--         <h2 id="result"></h2> -->
- 
-<!-- <div class="modal-body"> -->
+<!-- start test-->
 
-<div id = "myAlert" class = "page-header">
+<h1 class="modal-title" id='msg' align='center' style="text-align: center"></h1>
+
+<div id = "myAlert" class = "page-header" align="center">
    <a href = "#" class = "close" data-dismiss = "alert">&times;</a>
    <strong>Nice work - you're done!</strong>
 </div>
-     </div>
 
-  </div>
-</div>
-</div>
 
 
 <!--   <div class='container-fluid'>
     <div class='col-xs-12'> -->
 
 
-<div class="container content">
+<div class="row">
+<div class="col-xs-8">
 <div class="hero-unit">
-<div class="panel panel-default">
-  <div class="panel-body col-xs-8">
+
+
       <label for='work'>Flow timer (min): </label>
       <input autofocus id='work' type='text' min=0 max=200 value='25' >
 
@@ -43,9 +36,9 @@
       </button>
       <button id='reset' class='btn btn-primary center-block'>Reset</button>
     </div><!--Row Closer-->
-  </div>
 
-</div>
+
+
 
 
        <%= form_for(@micropost) do |f| %>
@@ -54,19 +47,17 @@
 
   <div class="field">
     <%= f.text_area :content, placeholder: "Flow block title..." %>
+<br></br>
 
 
-  <%= f.submit "Post", class: "btn btn-large btn-primary pull-right", id: "saveEntry" %>
+  <%= f.submit "Post", class: "btn btn-large btn-primary", id: "saveEntry" %>
 
 
     </div>
 
 
 <div class="panel panel-default">
-  <div class="panel-body col-xs-8 pull-right">
-
-<!-- <input type='submit' class='btn btn-primary pull-right' id="saveEntry" value='Create'>
- -->
+  <div class="panel-body col-xs-4">
 
 
 </div>
@@ -74,75 +65,5 @@
   </div>
     </div>
 
-
-
-
-
-<!-- <h1 class="modal-title" id='msg' align='center' class='text-center'></h1>
-<div id = "myAlert" class = "page-header">
-   <a href = "#" class = "close" data-dismiss = "alert">&times;</a>
-   <strong>Nice work - you're done!</strong>
-</div>  
-<div class="container content">
-
-<div class="btn-group" role="group" >
-    <button id='start' class='btn center-block'>Start
-	    </button>
-    <button id='pause' class='btn center-block pause'>Pause
-      	</button>
-    <button id='reset' class='btn center-block'>Reset
-    	</button>
-</div>
-
-
-      <label for='work'>Flow timer (min): </label>
-      <input size="3" id='work' min=0 max=200 value='25'>
-
-</div>
-</div> -->
 
 <% end %>
-
-
-<!-- INTEGRATE THE FLOW BLOCK TIMER HERE   -->
-
-
-<!-- 
-<h1 class="modal-title" id='msg' align='center' class='text-center'></h1>
-
-
-<div id = "myAlert" class = "page-header">
-   <a href = "#" class = "close" data-dismiss = "alert">&times;</a>
-   <strong>Nice work - you're done!</strong>
-</div>
-     </div>
-
-  </div>
-</div>
-</div>
-
-
-<div class="container content">
-
-<div class="panel panel-default">
-
-
-      <div class="btn-group" role="group" >
-        <button id='start' class='btn btn-primary center-block'>Start
-        <span class="glyphicon glyphicon-record">
-        </button>
-      <button id='pause' class='btn btn-primary center-block pause'>Pause
-
-      </button>
-      <button id='reset' class='btn btn-primary center-block'>Reset</button>
-
-
-
-	    </div>
-      <label for='work'>Flow timer (min): </label>
-      <input autofocus id='work' type='text' min=0 max=200 value='25' >
-
-
-
-
- -->
