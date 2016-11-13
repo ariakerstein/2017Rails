@@ -13,6 +13,10 @@ class MicropostsController < ApplicationController
     end
   end
 
+def new 
+  @micropost = micropost.new @categories = Category.all.map{|c| [ c.name, c.id ] }
+end
+
   def destroy
     @micropost.destroy
     redirect_to root_url
