@@ -1,6 +1,6 @@
 <%= form_for @category do |f|%>
         <%= hidden_field_tag :user_id, @user.id  %>
-        <%= f.label :category ,"Category:"%>
+<!-- -->
         <%=h f.text_field :category %><br />
         <%= f.submit "Add Category" %>  
  <% end %>
