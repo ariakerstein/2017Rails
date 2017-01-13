@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :microposts, dependent: :destroy
-  has_many :categories, :dependent => :destroy
+  # has_many :categories, :dependent => :destroy
   # accepts_nested_attributes_for :category, :reject_if =>lambda {|a| a[:category].blank?}  
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
   has_many :followed_users, through: :relationships, source: :followed

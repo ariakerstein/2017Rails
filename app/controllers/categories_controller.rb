@@ -1,4 +1,4 @@
-class CategoriesController < ApplicationController
+Aclass CategoriesController < ApplicationController
 def create
     @category = current_user.categories.new(params[:category])
     if @category.save 
