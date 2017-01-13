@@ -1,5 +1,3 @@
 class Category < ActiveRecord::Base
-    belongs_to :user    
-    has_many :microposts
-    # attr_accessible :category
+  has_and_belongs_to_many :microposts 
 end
